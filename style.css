@@ -1,0 +1,14 @@
+.container {
+    /*display: flex;
+    flex: 2;*/
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+
+.images  > .img {
+    height: 200px;
+    width: 200px;
+}
+
