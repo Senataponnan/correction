@@ -1,14 +1,68 @@
 .container {
-    /*display: flex;
-    flex: 2;*/
+    /* Ensure the entire container uses Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex: 2; */
     margin: 10px;
     padding: 10px;
     width: 90%;
 }
 
 
-.images  > .img {
-    height: 200px;
-    width: 200px;
+/* Style for the h1 element within the id class */
+.id h1 span {
+    color: tomato;
 }
 
+/* Remove default list styling and ensure the list items are displayed inline */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Ensure each list item has some padding and spacing */
+nav ul li {
+    margin: 0 10px;
+}
+
+/* Style for the links */
+nav ul li a {
+    text-decoration: none;
+    color: inherit; /* This ensures the links inherit the text color of their parent */
+}
+
+/* for a current page link styling */
+nav ul li.current a {
+    font-weight: bold;
+}
+
+
+
+/* The reason the images appear to be laid out in a row, even though you haven't explicitly set display: flex, might be due to the default behavior of inline elements. By default, img elements are inline-block elements, meaning they will sit next to each other if there is enough horizontal space. */
+.images  > img {
+
+    height: 300px;
+    width: 300px;
+}
+
+
+/* Style for footer */
+.footer {
+    background-color: #f8f8f8; /* Optional background color for footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Add some space above the footer */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .id h1 {
+    font-size: 16px; /* Smaller font size for the footer text */
+    color: #333;
+}
